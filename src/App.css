@@ -20,7 +20,12 @@ hr {
   width: 30%;
 }
 
+.message {
+  font-family: "Pangolin", cursive;
+}
+
 .heading {
+  font-family: "Goblin One", cursive;
   font-size: 2.5em;
   margin: 1em auto 1em auto;
   text-align: center;
@@ -53,19 +58,41 @@ hr {
   box-shadow: 0px 0px 15px 0px white;
 }
 
+.success {
+  color: gold;
+}
+
 .slot_inner {
 }
 
-.roll {
+/* .roll {
   width: 10%;
   font-weight: bold;
   padding: 8px;
   text-align: center;
-  background-color: gold;
+  background-color: whitesmoke;
   box-shadow: 0 4px 5px 0px white;
   border: 2px solid black;
   border-radius: 15px;
   margin: 1.2rem auto;
+} */
+
+.roll {
+  width: 13%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid black;
+  backdrop-filter: blur(3px);
+  color: cyan;
+  padding: 1rem 0.75rem;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin: 1.2em auto;
+  cursor: pointer;
+  /* transition: 0.1s; */
 }
 
 .roll:focus {
@@ -74,6 +101,7 @@ hr {
 }
 
 .roll:active {
+  color: black;
   background-color: gold;
   box-shadow: 0 4px 5px 0px white;
   transform: translateY(1px);

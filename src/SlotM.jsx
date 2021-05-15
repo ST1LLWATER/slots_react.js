@@ -11,7 +11,7 @@ const SlotM = (props) => {
           <h1 className="emoji">
             {x} {y} {z}
           </h1>
-          <h1>You Got A Match!</h1>
+          <h1 className="success message">You Got A Match</h1>
         </div>
       </>
     );
@@ -22,7 +22,7 @@ const SlotM = (props) => {
           <h1>
             {x} {y} {z}
           </h1>
-          <h1>Match Failed!</h1>
+          <h1 className="message">Match Failed</h1>
         </div>
       </>
     );
