@@ -33,6 +33,7 @@ const App = () => {
           z={items[randomizer()]}
         />
       </div>
+      <button className="roll">CLICK TO ROLL</button>
     </>
   );
 };

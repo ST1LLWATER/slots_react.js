@@ -7,11 +7,16 @@ body {
   background-size: cover;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
 hr {
   border-style: none none dotted none;
   border-width: 10px;
   border-collapse: collapse;
-  /* border-style: dotted; */
+  border-color: whitesmoke;
   width: 30%;
 }
 
@@ -46,4 +51,29 @@ hr {
   margin: auto;
   text-align: center;
   box-shadow: 0px 0px 15px 0px white;
+}
+
+.slot_inner {
+}
+
+.roll {
+  width: 10%;
+  font-weight: bold;
+  padding: 8px;
+  text-align: center;
+  background-color: gold;
+  box-shadow: 0 4px 5px 0px white;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 1.2rem auto;
+}
+
+.roll:focus {
+  outline: none;
+}
+
+.roll:active {
+  background-color: gold;
+  box-shadow: 0 4px 5px 0px white;
+  transform: translateY(2px);
 }
