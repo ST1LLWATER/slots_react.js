@@ -70,6 +70,7 @@ hr {
 
 .roll:focus {
   outline: none;
+  cursor: pointer;
 }
 
 .roll:active {

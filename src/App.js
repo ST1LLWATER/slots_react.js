@@ -5,10 +5,18 @@ import SlotM from "./SlotM.jsx";
 const items = ["😂", "😨", "🥶", "😷", "🤠"];
 
 const randomizer = () => {
-  return Math.trunc(Math.random() * 3);
+  let randomNumber = [];
+  let i;
+  for (i = 0; i < 9; i++) {
+    randomNumber.push(Math.trunc(Math.random() * 3));
+  }
+  // console.log(randomNumber);
+  return randomNumber;
 };
 
 const App = () => {
+  const randomNumber = randomizer();
+
   return (
     <>
       <h1 className="heading">
@@ -16,24 +24,26 @@ const App = () => {
       </h1>
       <div className="slots">
         <SlotM
-          x={items[randomizer()]}
-          y={items[randomizer()]}
-          z={items[randomizer()]}
+          x={items[randomNumber[0]]}
+          y={items[randomNumber[1]]}
+          z={items[randomNumber[2]]}
         />
         <hr />
         <SlotM
-          x={items[randomizer()]}
-          y={items[randomizer()]}
-          z={items[randomizer()]}
+          x={items[randomNumber[3]]}
+          y={items[randomNumber[4]]}
+          z={items[randomNumber[5]]}
         />
         <hr />
         <SlotM
-          x={items[randomizer()]}
-          y={items[randomizer()]}
-          z={items[randomizer()]}
+          x={items[randomNumber[6]]}
+          y={items[randomNumber[7]]}
+          z={items[randomNumber[8]]}
         />
       </div>
-      <button className="roll">CLICK TO ROLL</button>
+      <button className="roll" onClick={randomizer}>
+        CLICK TO ROLL
+      </button>
     </>
   );
 };
