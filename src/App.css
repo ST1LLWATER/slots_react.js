@@ -76,5 +76,5 @@ hr {
 .roll:active {
   background-color: gold;
   box-shadow: 0 4px 5px 0px white;
-  transform: translateY(2px);
+  transform: translateY(1px);
 }
