@@ -1,6 +1,6 @@
 Created in React this Slots Machine Game is an Example of Basic use of the most basic Hook "useState".
 
-![](public\SS.png)
+![](public/SS.PNG)
 
 # Getting Started with Create React App
 
