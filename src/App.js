@@ -16,10 +16,9 @@ const randomizer = () => {
 
 const App = () => {
   const [randomNumber, setRandomNumber] = useState(randomizer());
-
   return (
     <>
-      <h1 className="heading">
+      <h1 className="heading head_design">
         🎰 Welcome To <span className="head_design">Slots Minigame</span> 🎰
       </h1>
       <div className="slots">
@@ -41,7 +40,10 @@ const App = () => {
           z={items[randomNumber[8]]}
         />
       </div>
-      <button className="roll" onClick={() => setRandomNumber(randomizer())}>
+      <button
+        className="btn-class"
+        onClick={() => setRandomNumber(randomizer())}
+      >
         CLICK TO ROLL
       </button>
       <p className="foot">©2020 Alok Punj Sharma All rights reserved</p>
