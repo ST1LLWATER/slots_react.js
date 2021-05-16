@@ -1,3 +1,7 @@
+Created in React this Slots Machine Game is an Example of Basic use of the most basic Hook "useState".
+
+![](public\SS.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

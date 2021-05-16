@@ -44,6 +44,7 @@ const App = () => {
       <button className="roll" onClick={() => setRandomNumber(randomizer())}>
         CLICK TO ROLL
       </button>
+      <p className="foot">©2020 Alok Punj Sharma All rights reserved</p>
     </>
   );
 };
