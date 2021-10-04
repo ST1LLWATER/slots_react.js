@@ -128,6 +128,7 @@ hr {
   text-shadow: 0 1px 0 #fff;
   background-image: linear-gradient(to left, #fce374, #fcdf5b);
   background-color: #fce374;
+  cursor: pointer;
 }
 .btn-class:hover,
 .btn-class:active {
